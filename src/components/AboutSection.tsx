@@ -70,7 +70,7 @@ const AboutSection: FC = () => {
           >
             <div className="surface rounded-xl p-3 hover-lift">
               <img
-                src="/profile.png"
+                src="./profile.png"
                 alt="Mohammed BOULOUD"
                 className="w-full rounded-lg object-cover aspect-square"
               />
