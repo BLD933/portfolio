@@ -72,9 +72,17 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
+            <a
+              href="https://canva.link/e0arjhp2n1mk4rw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 px-3 py-1.5 rounded-md text-xs font-medium font-mono text-black bg-accent hover:bg-accent/90 transition-colors"
+            >
+              CV
+            </a>
             <button
               onClick={toggleTheme}
-              className="ml-3 p-2 rounded-md text-muted hover:text-foreground hover:bg-surface transition-colors"
+              className="ml-1 p-2 rounded-md text-muted hover:text-foreground hover:bg-surface transition-colors"
               aria-label="Toggle theme"
             >
               {theme === "dark" ? (
@@ -141,6 +149,14 @@ export default function Navbar() {
                   {link.label}
                 </button>
               ))}
+              <a
+                href="https://canva.link/e0arjhp2n1mk4rw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-left px-3 py-2 rounded-md text-xs font-mono font-medium text-accent hover:bg-accent/5 transition-colors"
+              >
+                CV
+              </a>
             </div>
           </motion.div>
         )}
