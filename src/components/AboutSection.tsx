@@ -4,10 +4,10 @@ import { FC } from "react";
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "3+", label: "Years Coding" },
+  { value: "5+", label: "Years Coding" },
   { value: "10+", label: "Projects" },
   { value: "20+", label: "CTFs Solved" },
-  { value: "2", label: "Languages" },
+  { value: "3", label: "Languages" },
 ];
 
 const skills = [
@@ -33,7 +33,7 @@ const AboutSection: FC = () => {
           </h2>
         </motion.div>
 
-        <div className="grid gap-12 md:grid-cols-5">
+        <div className="grid gap-12 md:grid-cols-5 items-start">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -66,8 +66,15 @@ const AboutSection: FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="md:col-span-2"
+            className="md:col-span-2 space-y-4"
           >
+            <div className="surface rounded-xl p-3 hover-lift">
+              <img
+                src="/profile.png"
+                alt="Mohammed BOULOUD"
+                className="w-full rounded-lg object-cover aspect-square"
+              />
+            </div>
             <div className="grid grid-cols-2 gap-3">
               {stats.map((stat, i) => (
                 <motion.div
